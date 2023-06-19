@@ -24,14 +24,14 @@ function Navigation() {
 					</Link>
 				</div>
 
-				<div className="hidden gap-x-12 sm:flex">
+				<div className="flex gap-x-12">
 					{navigation.map((item) => (
 						<a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
 							{item.name}
 						</a>
 					))}
 				</div>
-				<div className="hidden sm:flex lg:flex-1 lg:justify-end" />
+				<div className="flex lg:flex-1 lg:justify-end" />
 			</nav>
 		</header>
 	);
