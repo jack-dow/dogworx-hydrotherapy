@@ -6,8 +6,12 @@ import { z } from "zod";
  */
 const server = z.object({
 	NODE_ENV: z.enum(["development", "test", "production"]),
-	GMAIL_EMAIL_ADDRESS: z.string().min(1),
-	GMAIL_APP_PASSWORD: z.string().min(1),
+	GOOGLE_EMAIL_ADDRESS: z.string().min(1),
+	GOOGLE_REFRESH_TOKEN: z.string().min(1),
+	GOOGLE_ACCESS_TOKEN: z.string().min(1),
+	GOOGLE_EXPIRES_IN: z.string().min(1),
+	GOOGLE_CLIENT_SECRET: z.string().min(1),
+	GOOGLE_CLIENT_ID: z.string().min(1),
 });
 
 /**
@@ -30,8 +34,12 @@ const client = z.object(
  */
 const processEnv = {
 	NODE_ENV: process.env.NODE_ENV,
-	GMAIL_EMAIL_ADDRESS: process.env.GMAIL_EMAIL_ADDRESS,
-	GMAIL_APP_PASSWORD: process.env.GMAIL_APP_PASSWORD,
+	GOOGLE_EMAIL_ADDRESS: process.env.GOOGLE_EMAIL_ADDRESS,
+	GOOGLE_REFRESH_TOKEN: process.env.GOOGLE_REFRESH_TOKEN,
+	GOOGLE_ACCESS_TOKEN: process.env.GOOGLE_ACCESS_TOKEN,
+	GOOGLE_EXPIRES_IN: process.env.GOOGLE_EXPIRES_IN,
+	GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+	GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
 	// NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
 };
 

@@ -4,6 +4,8 @@ import "../styles/globals.css";
 
 import { Inter } from "next/font/google";
 
+import { Toaster } from "~/components/ui/toaster";
+
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata = {
@@ -19,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<div className="relative flex min-h-screen flex-col">
 					<div className="flex-1">{children}</div>
 				</div>
+				<Toaster />
 			</body>
 		</html>
 	);

@@ -8,37 +8,37 @@ const faqs = [
 		id: 1,
 		question: "What is hydrotherapy?",
 		answer:
-			"hydrotherapy is a form of rehabilitation and exercise that involves your dog walking on the treadmill while submerged in water. The water provides resistance, which helps to build strength and endurance while the buoyancy of the water reduces the impact on the dog's joints.",
+			"Hydrotherapy is a form of rehabilitation and exercise that involves your dog walking on the treadmill while submerged in water. The water provides resistance, which helps to build strength and endurance while the buoyancy of the water reduces the impact on the dog's joints.",
 	},
 	{
 		id: 2,
 		question: "What can hydrotherapy do for my dog?",
 		answer:
-			"Hydrotherapy can help with a variety of circumstances, including recovery from injury or surgery, 'pre-hab' to prepare for surgery, relief from pain caused by arthritis, maintaining muscle mass and mobility, weight loss, fitness and conditioning, as well as providing enrichment and mental stimulation.",
+			"Hydrotherapy can help in a variety of circumstances, including recovery from injury or surgery, 'pre-hab' to prepare for surgery, relief from pain caused by arthritis, maintaining muscle mass and mobility, weight loss, fitness and conditioning, as well as providing enrichment and mental stimulation.",
 	},
 	{
 		id: 3,
 		question: "How are the sessions structured?",
 		answer:
-			"Our initial session takes about an hour and provides an opportunity for us to get to know each other, so your dog feels relaxed in our clinic and enjoys visiting for their sessions. We introduce them to the underwater treadmill at a pace they’re comfortable with. We’ll also discuss your dog’s history and what you hope they’ll achieve from hydrotherapy.",
+			"Our initial session takes approximately an hour and provides an opportunity for us to get to know each other, so your dog feels relaxed in our clinic and enjoys visiting for their sessions. We introduce them to the underwater treadmill at a pace they're comfortable with. We'll also discuss your dog's history and what you hope they'll achieve from hydrotherapy.",
 	},
 	{
 		id: 4,
 		question: "Follow-up sessions",
 		answer:
-			"Following your dog's initial sessions, follow-up sessions usually take about half an hour, during which we'll discuss how your dog's progressed since their previous session and what our goals are for this session.",
+			"Following your dog's initial session, follow-up sessions usually take approximately half an hour, during which we'll discuss how your dog's progressed since their previous session and what our goals are for this session.",
 	},
 	{
 		id: 5,
 		question: "How much does it cost?",
 		answer:
-			"We'’'re currently offering an introductory special rate of $99 for your dog'’'s initial session, then $55 per session for follow ups; or $290 for our five-session package, which includes the initial session, plus four follow ups.",
+			"We're currently offering an introductory special rate of $99 for your dog's initial session, then $55 per session for follow ups; or $290 for our five-session package, which includes the initial session, plus four follow ups.",
 	},
 	{
 		id: 6,
 		question: "Do I need a referral from my vet?",
 		answer:
-			"We operate on a vet-referral basis to ensure we'’'re providing treatment that‘s in alignment with your dog'’'s overall health management plan. However, it's a very simple process whereby we contact your vet to obtain their confirmation that your dog doesn't have any issues that would preclude them from having hydrotherapy in our underwater treadmill.",
+			"We operate on a vet-referral basis to ensure we're providing treatment that's in alignment with your dog's overall health management plan. However, it's a very simple process whereby we contact your vet to obtain their confirmation that your dog doesn't have any issues that would preclude them from having hydrotherapy in our underwater treadmill.",
 	},
 	{
 		id: 7,
@@ -53,7 +53,7 @@ export default function Home() {
 			<Navigation />
 			<main>
 				<div className="relative isolate">
-					<div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+					<div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 sm:z-20 lg:-z-10">
 						<div
 							className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#FF80B5] to-[#9089fc] opacity-30 sm:left-[calc(30%-30rem)] sm:w-[72.1875rem]"
 							style={{
@@ -100,10 +100,10 @@ export default function Home() {
 					</div>
 
 					<div className="overflow-hidden">
-						<div className="mx-auto max-w-7xl space-y-16 px-6 pb-8 pt-36 sm:space-y-20 sm:pt-60 lg:px-8 lg:pt-32">
+						<div className="mx-auto max-w-7xl space-y-16 px-6 pb-8 pt-36 sm:space-y-20 sm:px-8 md:px-12 lg:px-8 lg:pt-32 ">
 							{/* <!-- Header --> */}
-							<div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-								<div className="w-full max-w-xl pt-10 lg:shrink-0 xl:max-w-2xl">
+							<div className="max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+								<div className="w-full max-w-xl sm:pt-10 lg:shrink-0 xl:max-w-2xl">
 									<h1 className="text-4xl font-bold capitalize tracking-tight text-gray-900 sm:text-6xl">
 										The care your dog would choose
 									</h1>
@@ -119,69 +119,78 @@ export default function Home() {
 										>
 											Contact Us
 										</a>
-										<a href="#faq" className="text-sm font-semibold leading-6 text-gray-900">
+										<a
+											href="#faq"
+											className="text-sm font-semibold leading-6 text-gray-900 hover:underline focus-visible:underline"
+										>
 											Learn More <span aria-hidden="true">→</span>
 										</a>
 									</div>
 								</div>
 
 								{/* <!-- Header Images --> */}
-								<div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-									<div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+								<div className="mt-14 flex justify-end sm:-mt-44 sm:justify-start sm:gap-8 sm:pl-20 lg:mt-0 lg:pl-0">
+									<div className="ml-auto hidden w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:block sm:pt-80 lg:order-last lg:hidden  lg:pt-36 xl:order-none xl:block xl:pt-80">
 										<div className="relative">
 											<Image
-												src="https://images.unsplash.com/photo-1568483718627-15a190f20fcf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-												alt=""
+												src="/imgs/header/01-front-of-shop-night-min.png"
+												alt="The Dogworx Hydrotherapy shop front at night"
 												width={352}
 												height={528}
 												className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 											/>
-											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
 										</div>
 									</div>
 									<div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
 										<div className="relative">
 											<Image
-												src="https://images.unsplash.com/photo-1514373941175-0a141072bbc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-												alt=""
+												src="/imgs/header/02-poops-close-min.png"
+												alt="Calla (Great Dane cross Wolfhound) in the underwater treadmill"
 												width={352}
 												height={528}
-												className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+												className="hidden aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg sm:block lg:hidden xl:block"
 											/>
-											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+											<Image
+												src="/imgs/header/01-front-of-shop-night-min.png"
+												alt="The Dogworx Hydrotherapy shop front at night"
+												width={352}
+												height={528}
+												className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg sm:hidden lg:block xl:hidden"
+											/>
+											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
 										</div>
 										<div className="relative">
 											<Image
-												src="https://images.unsplash.com/photo-1562089501-5215229b367a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
-												alt=""
+												src="/imgs/header/03-sadie-close-min.png"
+												alt="Sadie (Golden Labrador) in the underwater treadmill"
 												width={352}
 												height={528}
 												className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 											/>
-											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
 										</div>
 									</div>
 									<div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
 										<div className="relative">
 											<Image
-												src="https://images.unsplash.com/photo-1600198538391-e7f7625199d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-												alt=""
+												src="/imgs/header/04-inside-shop-right-night-min.png"
+												alt="Inside the Dogworx Hydrotherapy shop taken at night"
 												width={352}
 												height={528}
 												className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 											/>
-											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
 										</div>
 										<div className="relative">
 											<Image
-												data-tmp="https://images.unsplash.com/photo-1612531025228-8e737605e42d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-												src="https://images.unsplash.com/photo-1637119772594-9db64a98957c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-												alt=""
+												src="/imgs/header/05-mayzie-close-min.png"
+												alt="Mayzie (Chocolate Labrador) in the underwater treadmill"
 												width={352}
 												height={528}
 												className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 											/>
-											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+											<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
 										</div>
 									</div>
 								</div>
@@ -189,7 +198,7 @@ export default function Home() {
 
 							{/* <!-- FAQS --> */}
 							<section id="faq">
-								<div className="mx-auto max-w-7xl py-16">
+								<div className="max-w-7xl ">
 									<div className="mx-auto max-w-2xl text-center">
 										<h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
 											Frequently asked questions
@@ -205,8 +214,8 @@ export default function Home() {
 											and we’ll get back to you as soon as we can.
 										</p>
 									</div>
-									<div className="mt-20">
-										<dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-2 lg:gap-x-10">
+									<div className="mt-14">
+										<dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-16 md:space-y-0 lg:grid-cols-2 lg:gap-x-10">
 											{faqs.map((faq) => (
 												<div key={faq.id}>
 													<dt className="text-base font-semibold leading-7 text-gray-900">{faq.question}</dt>
@@ -217,15 +226,17 @@ export default function Home() {
 												<dt className="text-base font-semibold leading-7 text-gray-900">Some common signs are:</dt>
 												<dd className="mt-2 text-base leading-7 text-gray-600">
 													<ul className="list-disc pl-4">
-														<li>Doesn’t sit straight – rolls onto one hip, or has leg/s sticking out to the side.</li>
-														<li>‘Bunny hops’ back legs when running.</li>
-														<li>Butt wiggles when walking.</li>
-														<li>‘Too lazy’ or hesitant to jump into the car or onto furniture.</li>
 														<li>
-															Doesn’t enjoy being petted in certain areas or positions, eg. doesn’t like being laid on
-															their back, or their back twitches when you pat down their spine.
+															Doesn&apos;t sit straight - rolls onto one hip, or has leg/s sticking out to the side.
 														</li>
-														<li>Gets ‘grumpy’ after a lot of activity.</li>
+														<li>&apos;Bunny hops&apos; back legs when running.</li>
+														<li>Butt wiggles when walking.</li>
+														<li>&apos;Too lazy&apos; or hesitant to jump into the car or onto furniture.</li>
+														<li>
+															Doesn&apos;t enjoy being petted in certain areas or positions, eg. doesn&apos;t like being
+															laid on their back, or their back twitches when you pat down their spine.
+														</li>
+														<li>Gets &apos;grumpy&apos; after a lot of activity.</li>
 														<li>Reluctant to run around &amp; play with other dogs, or is lame afterwards.</li>
 													</ul>
 												</dd>
@@ -235,11 +246,11 @@ export default function Home() {
 								</div>
 							</section>
 
-							{/* <!-- About Us --> */}
+							{/* <!-- About --> */}
 							<section className="mt-32" id="about">
-								<div className="mx-auto max-w-7xl lg:flex">
-									<div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
-										<div className="w-full max-w-xl pt-10 lg:shrink-0 xl:max-w-2xl">
+								<div className="max-w-7xl lg:flex">
+									<div className="grid max-w-2xl grid-cols-1 gap-12 sm:gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-8 xl:gap-12 ">
+										<div className="w-full max-w-xl lg:max-w-lg lg:shrink-0 xl:max-w-2xl">
 											<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet Sandy</h2>
 											<p className="mt-6 text-xl leading-8 text-gray-600">
 												Sandy started Dogworx in 2011 to provide behaviour coaching for pet dogs and their owners. Since
@@ -248,50 +259,59 @@ export default function Home() {
 											</p>
 											<p className="mt-6 text-base leading-7 text-gray-600">
 												Dogs are very adept at hiding pain, so many loving owners are unaware that their dogs are
-												experiencing discomfort on a daily basis. Seeing so much of this and knowing it’s not just old
-												dogs that can be living in pain, she finally decided to take the plunge and invest in an
+												experiencing discomfort on a daily basis. Seeing so much of this and knowing it&apos;s not just
+												old dogs that can be living in pain, she finally decided to take the plunge and invest in an
 												underwater treadmill!
 											</p>
 
 											<p className="mt-6 text-base leading-7 text-gray-600">
-												Thankfully it’s not all aches &amp; pains though – hydrotherapy’s fantastic for fitness &amp;
-												conditioning, as well as enrichment &amp; mental stimulation for all dogs, so it’s a fun way to
-												keep your dog fit, healthy &amp; happy for as long as possible.
+												Thankfully it&apos;s not all aches &amp; pains though - hydrotherapy&apos;s fantastic for
+												fitness &amp; conditioning, as well as enrichment &amp; mental stimulation for all dogs, so
+												it&apos;s a fun way to keep your dog fit, healthy &amp; happy for as long as possible.
 											</p>
 										</div>
-										<div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
+										<div className="w-full flex-auto lg:hidden">
+											<Image
+												src="/imgs/about/01-sandy-sadie-min.png"
+												alt="Sandy (left) conducting a hydrotherapy session with Sadie (right) in the underwater treadmill"
+												width={1152}
+												height={768}
+												className="aspect-[7/5] w-full max-w-none rounded-2xl bg-gray-50 object-cover"
+											/>
+										</div>
+										<div className="hidden flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents ">
 											<div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
 												<Image
-													src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
-													alt=""
+													src="/imgs/about/01-sandy-sadie-min.png"
+													alt="Sandy (left) conducting a hydrotherapy session with Sadie (right) in the underwater treadmill"
 													width={1152}
 													height={768}
 													className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
 												/>
 											</div>
-											<div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
+											<div className="contents lg:col-span-2 lg:col-end-2 lg:flex lg:items-start lg:gap-x-8 xl:ml-auto xl:w-[37rem] xl:justify-end">
 												<div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
 													<Image
-														src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-														alt=""
+														src="/imgs/about/02-gus-min.png"
+														alt="Gus (boxer) sitting in-front of the underwater treadmill wearing a Dogworx Hydrotherapy towel after his session"
 														width={768}
 														height={604}
-														className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+														className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-fill"
 													/>
 												</div>
 												<div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
 													<Image
-														src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
-														alt=""
+														src="/imgs/about/03-inside-shop-right-min.png"
+														alt="Inside of the Dogworx Hydrotherapy shop taken at night"
 														width={1152}
 														height={842}
 														className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
 													/>
 												</div>
-												<div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
+												<div className="hidden sm:w-0 sm:flex-auto xl:block xl:w-auto xl:flex-none">
 													<Image
-														src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-														alt=""
+														src="/imgs/about/04-sign-at-night-min.png"
+														alt="The sign outside of the Dogworx Hydrotherapy shop taken at night"
 														width={768}
 														height={604}
 														className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
@@ -303,7 +323,7 @@ export default function Home() {
 								</div>
 							</section>
 
-							<section className="pt-24" id="contact">
+							<section id="contact">
 								<ContactForm />
 							</section>
 						</div>
@@ -312,11 +332,15 @@ export default function Home() {
 			</main>
 
 			{/* <!-- Footer --> */}
-			<footer className="bg-white pt-24">
-				<div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-					<div className="flex justify-center space-x-6 md:order-2">
-						<a href="https://goo.gl/maps/sCuVg83WzBpaBXux6" target="_blank" className="text-sky-600 hover:underline">
-							T6, 659 Reserve Road, Upper Coomera, QLD 4207
+			<footer className="bg-white">
+				<div className="mx-auto max-w-7xl py-12 lg:flex  lg:items-center lg:justify-between lg:px-8">
+					<div className="flex items-center justify-center space-x-6 lg:order-2">
+						<a
+							href="https://goo.gl/maps/sCuVg83WzBpaBXux6"
+							target="_blank"
+							className="text-sm text-sky-600 hover:underline"
+						>
+							T6, 659 Reserve Road, Upper Coomera
 						</a>
 						<a href="https://facebook.com/dogworx" target="_blank" className="text-gray-400 hover:text-gray-500">
 							<span className="sr-only">Facebook</span>
@@ -343,9 +367,9 @@ export default function Home() {
 							</svg>
 						</a>
 					</div>
-					<div className="mt-8 md:order-1 md:mt-0">
+					<div className="mt-8 lg:order-1 lg:mt-0">
 						<p className="text-center text-xs leading-5 text-gray-500">
-							&copy; 2023 Dogworx Hydrotherapy, Inc. All rights reserved.
+							&copy; {new Date().getFullYear()} Dogworx Hydrotherapy. All rights reserved.
 						</p>
 					</div>
 				</div>

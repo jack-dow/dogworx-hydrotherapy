@@ -2,7 +2,7 @@
 /** @typedef  {import("prettier").Config} PrettierConfig*/
 /** @typedef  {{ tailwindConfig: string }} TailwindConfig*/
 
-/** @type { PrettierConfig | SortImportsConfig | TailwindConfig } */
+/** @type { PrettierConfig | SortImportsConfig | TailwindConfig | {[key: string]: any} } */
 const config = {
 	printWidth: 120,
 	trailingComma: "all",

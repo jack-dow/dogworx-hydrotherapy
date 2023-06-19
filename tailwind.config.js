@@ -71,5 +71,6 @@ module.exports = {
 			},
 		},
 	},
+	// @ts-expect-error - tailwindcss-animate plugin doesn't have/need typescript defs
 	plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],
 };
