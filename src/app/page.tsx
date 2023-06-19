@@ -338,7 +338,7 @@ export default function Home() {
 						<a
 							href="https://goo.gl/maps/sCuVg83WzBpaBXux6"
 							target="_blank"
-							className="text-sm text-sky-600 hover:underline"
+							className="text-sm text-sky-700 hover:underline"
 						>
 							T6, 659 Reserve Road, Upper Coomera
 						</a>

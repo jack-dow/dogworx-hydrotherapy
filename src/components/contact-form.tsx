@@ -161,6 +161,7 @@ function ContactForm() {
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.058840638382!2d153.28560130000002!3d-27.900167599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b911714c0ef8875%3A0x5f7a19a79796d50d!2sDogworx%20Hydrotherapy!5e0!3m2!1sen!2sau!4v1687064203566!5m2!1sen!2sau"
 								width="600"
 								height="450"
+								title="Dogworx Hydrotherapy Google Maps Location"
 								style={{ border: 0 }}
 								allowFullScreen={false}
 								loading="lazy"
@@ -273,6 +274,7 @@ function ContactForm() {
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.058840638382!2d153.28560130000002!3d-27.900167599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b911714c0ef8875%3A0x5f7a19a79796d50d!2sDogworx%20Hydrotherapy!5e0!3m2!1sen!2sau!4v1687064203566!5m2!1sen!2sau"
 						width="100%"
 						height="450"
+						title="Dogworx Hydrotherapy Google Maps Location"
 						style={{ border: 0 }}
 						allowFullScreen={false}
 						loading="lazy"
