@@ -20,8 +20,10 @@ async function sendContactEmail(data: ContactFormSchema) {
 	});
 
 	const result = await transporter.sendMail({
-		subject: `New Contact Form Submission from email: "${data.email}" - Phone: "${data.phone}" `,
-		text: data.message,
+		subject: `Website Contact Form Submission from email: "${data.email}" - Phone: "${data.phone}" `,
+		text: `Name:\n${data.firstName}${data.lastName ? ` ${data.lastName}` : ""}\n\nEmail:\n${data.email}\n\nPhone:\n${
+			data.phone
+		}\n\nMessage:\n${data.message}`,
 		to: env.GOOGLE_EMAIL_ADDRESS,
 		from: env.GOOGLE_EMAIL_ADDRESS,
 	});
