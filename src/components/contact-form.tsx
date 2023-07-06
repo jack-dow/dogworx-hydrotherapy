@@ -24,9 +24,6 @@ export const ContactFormSchema = z.object({
 		}),
 	lastName: z
 		.string()
-		.min(2, {
-			message: "Last name must be at least 2 characters long",
-		})
 		.max(50, {
 			message: "Last name must be less than 50 characters long",
 		})
@@ -61,15 +58,21 @@ function ContactForm() {
 	});
 
 	async function onSubmit(values: ContactFormSchema) {
-		const result = await sendContactEmail(values);
-
-		if (typeof result.accepted === "string" ? true : result.accepted.length > 0) {
+		try {
+			const result = await sendContactEmail(values);
+			if (typeof result.accepted === "string" ? true : result.accepted.length > 0) {
+				toast({
+					title: `Message sent.`,
+					description: `Successfully sent your message, we will get back to you as soon as possible.`,
+				});
+				form.reset();
+			}
+		} catch (error) {
+			console.error(error);
 			toast({
-				title: `Message sent.`,
-				description: `Successfully sent your message, we will get back to you as soon as possible.`,
+				title: "If the error persists",
+				description: `You can contact us directly via email (sandy@dogworx.com.au) or phone (0405774901).`,
 			});
-			form.reset();
-		} else {
 			toast({
 				title: `Message failed to send`,
 				description: `There was an error sending your message, please try again later.`,
