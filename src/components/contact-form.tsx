@@ -2,7 +2,6 @@
 
 // import {  EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { MailIcon, PhoneIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
@@ -12,6 +11,7 @@ import { Input } from "./ui/input";
 import { Loader } from "./ui/loader";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "./ui/use-toast";
+import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/outline";
 
 export const ContactFormSchema = z.object({
 	firstName: z
@@ -116,7 +116,7 @@ function ContactForm() {
 							<div className="flex gap-x-4">
 								<dt className="flex-none">
 									<span className="sr-only">Email</span>
-									<MailIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+									<EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
 								</dt>
 								<dd>
 									<a className="hover:text-gray-900" href="mailto:sandy@dogworx.com.au">

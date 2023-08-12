@@ -1,8 +1,23 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import { Loader2 } from "lucide-react";
 
 import { cx } from "~/lib/utils";
 
+function LoaderIcon({ className }: { className: string }) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			strokeWidth="2"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			className={className}
+		>
+			<path d="M21 12a9 9 0 1 1-6.219-8.56" />
+		</svg>
+	);
+}
 const loaderVariants = cva("animate-spin", {
 	variants: {
 		size: {
@@ -27,7 +42,7 @@ interface LoaderProps extends VariantProps<typeof loaderVariants> {
 }
 
 function Loader({ className, size, variant }: LoaderProps) {
-	return <Loader2 className={cx(loaderVariants({ size, variant, className }))} />;
+	return <LoaderIcon className={cx(loaderVariants({ size, variant, className }))} />;
 }
 
 export { Loader };
